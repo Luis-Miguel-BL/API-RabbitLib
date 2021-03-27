@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  postgres-compose:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: ${TYPEORM_PASSWORD}
+    ports:
+      - '${TYPEORM_PORT}:5432'
+    volumes:
+      - ${VOLUME_PATH}
+    restart: always
+    networks:
+      - postgres-compose-network
+networks:
+  postgres-compose-network:
+    driver: bridge

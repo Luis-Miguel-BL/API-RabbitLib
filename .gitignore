@@ -1,0 +1,11 @@
+node_modules
+
+src/shared/config/jwks.json
+yarn.lock
+yarn-error.log
+tmp
+
+.editorconfig
+.env
+.vscode
+.idea
