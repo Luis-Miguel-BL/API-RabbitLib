@@ -1,4 +1,4 @@
-import Nationality from "@modules/nationality/infra/typeorm/entities/Nationality";
+import Nationality from "@modules/author/infra/typeorm/entities/Nationality";
 import ICreateNationalityDTO from "../dtos/ICreateNationalityDTO";
 import IFindNationalityDTO from "../dtos/IFindNationalityDTO";
 import IPaginationDTO from "../dtos/IPaginationDTO";

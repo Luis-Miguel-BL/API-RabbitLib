@@ -1,7 +1,7 @@
 import { injectable, inject } from "tsyringe";
 import AppError from "@shared/errors/AppError";
-import INationalityRepository from "@modules/nationality/repositories/INationalityRepository";
-import Nationality from "@modules/nationality/infra/typeorm/entities/Nationality";
+import INationalityRepository from "@modules/author/repositories/INationalityRepository";
+import Nationality from "@modules/author/infra/typeorm/entities/Nationality";
 import IUpdateNationalityDTO from "../dtos/IUpdateNationalityDTO";
 
 @injectable()

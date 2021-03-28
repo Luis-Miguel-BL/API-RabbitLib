@@ -1,13 +1,13 @@
 import AppError from "@shared/errors/AppError";
 import { getRepository, Repository } from "typeorm";
 
-import INationalityRepository from "@modules/nationality/repositories/INationalityRepository";
+import INationalityRepository from "@modules/author/repositories/INationalityRepository";
 
-import Nationality from "@modules/nationality/infra/typeorm/entities/Nationality";
-import ICreateNationalityDTO from "@modules/nationality/dtos/ICreateNationalityDTO";
-import IFindNationalityDTO from "@modules/nationality/dtos/IFindNationalityDTO";
-import IPaginationDTO from "@modules/nationality/dtos/IPaginationDTO";
-import IUpdateNationalityDTO from "@modules/nationality/dtos/IUpdateNationalityDTO";
+import Nationality from "@modules/author/infra/typeorm/entities/Nationality";
+import ICreateNationalityDTO from "@modules/author/dtos/ICreateNationalityDTO";
+import IFindNationalityDTO from "@modules/author/dtos/IFindNationalityDTO";
+import IPaginationDTO from "@modules/author/dtos/IPaginationDTO";
+import IUpdateNationalityDTO from "@modules/author/dtos/IUpdateNationalityDTO";
 
 class NationalityRepository implements INationalityRepository {
   private ormRepository: Repository<Nationality>;

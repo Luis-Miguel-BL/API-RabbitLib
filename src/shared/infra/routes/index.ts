@@ -1,7 +1,7 @@
 import { Router, Request, Response } from "express";
 import authRouter from "@modules/users/infra/http/routes/auth.routes";
 import userRouter from "@modules/users/infra/http/routes/user.routes";
-import nationalityRouter from "@modules/nationality/infra/http/routes/nationality.routes";
+import nationalityRouter from "@modules/author/infra/http/routes/nationality.routes";
 
 const routes = Router();
 

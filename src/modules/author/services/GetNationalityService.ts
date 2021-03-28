@@ -1,11 +1,10 @@
 import { injectable, inject } from "tsyringe";
+import INationalityRepository from "@modules/author/repositories/INationalityRepository";
+import Nationality from "@modules/author/infra/typeorm/entities/Nationality";
 import AppError from "@shared/errors/AppError";
-import INationalityRepository from "@modules/nationality/repositories/INationalityRepository";
-import Nationality from "@modules/nationality/infra/typeorm/entities/Nationality";
-import IUpdateNationalityDTO from "../dtos/IUpdateNationalityDTO";
 
 @injectable()
-class DeleteNationalityService {
+class GetNationalityService {
   constructor(
     @inject("NationalityRepository")
     private nationalityRepository: INationalityRepository
@@ -15,14 +14,13 @@ class DeleteNationalityService {
     const nationality = await this.nationalityRepository.findOne({
       id_nationality,
     });
+
     if (!nationality) {
       throw new AppError("This nationality not found.", 404);
     }
-
-    await this.nationalityRepository.delete(id_nationality);
 
     return nationality;
   }
 }
 
-export default DeleteNationalityService;
+export default GetNationalityService;

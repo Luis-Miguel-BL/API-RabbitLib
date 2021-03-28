@@ -1,11 +1,11 @@
 import { Request, Response } from "express";
 import { container } from "tsyringe";
 import { classToClass } from "class-transformer";
-import CreateNationalityService from "@modules/nationality/services/CreateNationalityService";
-import ListNationalityService from "@modules/nationality/services/ListNationalityService";
-import GetNationalityService from "@modules/nationality/services/GetNationalityService";
-import UpdateNationalityService from "@modules/nationality/services/UpdateNationalityService";
-import DeleteNationalityService from "@modules/nationality/services/DeleteNationalityService";
+import CreateNationalityService from "@modules/author/services/CreateNationalityService";
+import ListNationalityService from "@modules/author/services/ListNationalityService";
+import GetNationalityService from "@modules/author/services/GetNationalityService";
+import UpdateNationalityService from "@modules/author/services/UpdateNationalityService";
+import DeleteNationalityService from "@modules/author/services/DeleteNationalityService";
 
 export default class NationalityController {
   public async create(request: Request, response: Response): Promise<Response> {

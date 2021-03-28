@@ -6,8 +6,8 @@ import UsersRepository from "@modules/users/infra/typeorm/repositories/UserRepos
 import IUserTokenRepository from "@modules/users/repositories/IUserTokenRepository";
 import UserTokenRepository from "@modules/users/infra/typeorm/repositories/UserTokenRepository";
 
-import INationalityRepository from "@modules/nationality/repositories/INationalityRepository";
-import NationalityRepository from "@modules/nationality/infra/typeorm/repositories/NationalityRepository";
+import INationalityRepository from "@modules/author/repositories/INationalityRepository";
+import NationalityRepository from "@modules/author/infra/typeorm/repositories/NationalityRepository";
 
 container.registerSingleton<IUsersRepository>(
   "UsersRepository",

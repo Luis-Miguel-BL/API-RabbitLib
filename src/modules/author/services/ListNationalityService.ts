@@ -1,7 +1,7 @@
 import { injectable, inject } from "tsyringe";
-import INationalityRepository from "@modules/nationality/repositories/INationalityRepository";
-import Nationality from "@modules/nationality/infra/typeorm/entities/Nationality";
-import IFindNationalityDTO from "@modules/nationality/dtos/IFindNationalityDTO";
+import INationalityRepository from "@modules/author/repositories/INationalityRepository";
+import Nationality from "@modules/author/infra/typeorm/entities/Nationality";
+import IFindNationalityDTO from "@modules/author/dtos/IFindNationalityDTO";
 import IPaginationDTO from "../dtos/IPaginationDTO";
 
 @injectable()

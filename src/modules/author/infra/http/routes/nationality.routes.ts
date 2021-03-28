@@ -1,7 +1,7 @@
 import { Router } from "express";
 import { celebrate, Segments, Joi } from "celebrate";
 
-import UsersController from "@modules/nationality/infra/http/controllers/NationalityController";
+import UsersController from "@modules/author/infra/http/controllers/NationalityController";
 import authentication from "@shared/infra/middlewares/authentication";
 import _Joi from "@shared/utils/PatternCelebrate";
 
