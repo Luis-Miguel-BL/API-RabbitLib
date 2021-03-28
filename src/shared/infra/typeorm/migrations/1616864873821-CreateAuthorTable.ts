@@ -14,7 +14,12 @@ export class CreateAuthorTable1616864873821 implements MigrationInterface {
           },
           { name: "id_nationality", type: "uuid" },
           { name: "name", type: "varchar", length: "255" },
-          { name: "description", type: "varchar", length: "500" },
+          {
+            name: "description",
+            type: "varchar",
+            length: "500",
+            isNullable: true,
+          },
           { name: "created_at", type: "timestamptz", default: "now()" },
           { name: "updated_at", type: "timestamptz", default: "now()" },
           { name: "deleted_at", type: "timestamptz", isNullable: true },
